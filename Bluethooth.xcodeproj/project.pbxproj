@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0DB7CA20187347000E9922 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0DB7C820187347000E9922 /* DetailsViewController.m */; };
+		5A0DB7CB20187347000E9922 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0DB7C920187347000E9922 /* DetailsViewController.xib */; };
+		5A0F5B9A2021C2F1002E98A0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0F5B992021C2F1002E98A0 /* CoreBluetooth.framework */; };
+		5A0F5B9D2021C828002E98A0 /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F5B9B2021C827002E98A0 /* JNKeychain.m */; };
 		5A3CADF22011C2E400794FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CADF12011C2E400794FE7 /* AppDelegate.m */; };
 		5A3CADF52011C2E400794FE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CADF42011C2E400794FE7 /* ViewController.m */; };
 		5A3CADF82011C2E400794FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CADF62011C2E400794FE7 /* Main.storyboard */; };
@@ -14,9 +18,19 @@
 		5A3CADFD2011C2E400794FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CADFC2011C2E400794FE7 /* Assets.xcassets */; };
 		5A3CAE002011C2E400794FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CADFE2011C2E400794FE7 /* LaunchScreen.storyboard */; };
 		5A3CAE032011C2E400794FE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CAE022011C2E400794FE7 /* main.m */; };
+		5A3CAE162011E24F00794FE7 /* DeviceInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CAE142011E24F00794FE7 /* DeviceInformationViewController.m */; };
+		5A3CAE172011E24F00794FE7 /* DeviceInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE152011E24F00794FE7 /* DeviceInformationViewController.xib */; };
+		5A3CAE1A2011E8BA00794FE7 /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */; };
+		5A3CAE1C2011E8C800794FE7 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE1B2011E8C800794FE7 /* logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0DB7C720187347000E9922 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		5A0DB7C820187347000E9922 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		5A0DB7C920187347000E9922 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		5A0F5B992021C2F1002E98A0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5A0F5B9B2021C827002E98A0 /* JNKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKeychain.m; sourceTree = "<group>"; };
+		5A0F5B9C2021C828002E98A0 /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
 		5A3CADED2011C2E400794FE7 /* Bluethooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluethooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3CADF02011C2E400794FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A3CADF12011C2E400794FE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +42,13 @@
 		5A3CADFF2011C2E400794FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A3CAE012011C2E400794FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3CAE022011C2E400794FE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A3CAE132011E24F00794FE7 /* DeviceInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInformationViewController.h; sourceTree = "<group>"; };
+		5A3CAE142011E24F00794FE7 /* DeviceInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInformationViewController.m; sourceTree = "<group>"; };
+		5A3CAE152011E24F00794FE7 /* DeviceInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceInformationViewController.xib; sourceTree = "<group>"; };
+		5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@2x.png"; sourceTree = "<group>"; };
+		5A3CAE1B2011E8C800794FE7 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		5AB5A21120231B2C00126662 /* BluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothManager.h; sourceTree = "<group>"; };
+		5AB5A21220231B2D00126662 /* BluetoothDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothDevice.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +56,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0F5B9A2021C2F1002E98A0 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0DB7C6201872F6000E9922 /* Detail Info Page */ = {
+			isa = PBXGroup;
+			children = (
+				5A0DB7C720187347000E9922 /* DetailsViewController.h */,
+				5A0DB7C820187347000E9922 /* DetailsViewController.m */,
+				5A0DB7C920187347000E9922 /* DetailsViewController.xib */,
+			);
+			path = "Detail Info Page";
+			sourceTree = "<group>";
+		};
+		5A0F5B982021C2F0002E98A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A0F5B992021C2F1002E98A0 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A3CADE42011C2E400794FE7 = {
 			isa = PBXGroup;
 			children = (
 				5A3CADEF2011C2E400794FE7 /* Bluethooth */,
 				5A3CADEE2011C2E400794FE7 /* Products */,
+				5A0F5B982021C2F0002E98A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +101,13 @@
 		5A3CADEF2011C2E400794FE7 /* Bluethooth */ = {
 			isa = PBXGroup;
 			children = (
+				5AB5A21220231B2D00126662 /* BluetoothDevice.h */,
+				5AB5A21120231B2C00126662 /* BluetoothManager.h */,
+				5A0F5B9C2021C828002E98A0 /* JNKeychain.h */,
+				5A0F5B9B2021C827002E98A0 /* JNKeychain.m */,
+				5A0DB7C6201872F6000E9922 /* Detail Info Page */,
+				5A3CAE182011E8B100794FE7 /* image */,
+				5A3CAE122011E1C000794FE7 /* Details Page */,
 				5A3CADF02011C2E400794FE7 /* AppDelegate.h */,
 				5A3CADF12011C2E400794FE7 /* AppDelegate.m */,
 				5A3CADF32011C2E400794FE7 /* ViewController.h */,
@@ -72,6 +120,25 @@
 				5A3CADF92011C2E400794FE7 /* Bluethooth.xcdatamodeld */,
 			);
 			path = Bluethooth;
+			sourceTree = "<group>";
+		};
+		5A3CAE122011E1C000794FE7 /* Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CAE132011E24F00794FE7 /* DeviceInformationViewController.h */,
+				5A3CAE142011E24F00794FE7 /* DeviceInformationViewController.m */,
+				5A3CAE152011E24F00794FE7 /* DeviceInformationViewController.xib */,
+			);
+			path = "Details Page";
+			sourceTree = "<group>";
+		};
+		5A3CAE182011E8B100794FE7 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				5A3CAE1B2011E8C800794FE7 /* logo@2x.png */,
+				5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +199,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0DB7CB20187347000E9922 /* DetailsViewController.xib in Resources */,
 				5A3CAE002011C2E400794FE7 /* LaunchScreen.storyboard in Resources */,
+				5A3CAE1C2011E8C800794FE7 /* logo@2x.png in Resources */,
+				5A3CAE172011E24F00794FE7 /* DeviceInformationViewController.xib in Resources */,
 				5A3CADFD2011C2E400794FE7 /* Assets.xcassets in Resources */,
+				5A3CAE1A2011E8BA00794FE7 /* ic_back@2x.png in Resources */,
 				5A3CADF82011C2E400794FE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,8 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3CAE162011E24F00794FE7 /* DeviceInformationViewController.m in Sources */,
+				5A0F5B9D2021C828002E98A0 /* JNKeychain.m in Sources */,
 				5A3CADFB2011C2E400794FE7 /* Bluethooth.xcdatamodeld in Sources */,
 				5A3CADF52011C2E400794FE7 /* ViewController.m in Sources */,
+				5A0DB7CA20187347000E9922 /* DetailsViewController.m in Sources */,
 				5A3CAE032011C2E400794FE7 /* main.m in Sources */,
 				5A3CADF22011C2E400794FE7 /* AppDelegate.m in Sources */,
 			);
@@ -283,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3Q753JPDW;
+				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = Bluethooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bluethooth;
@@ -297,7 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R3Q753JPDW;
+				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = Bluethooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bluethooth;
