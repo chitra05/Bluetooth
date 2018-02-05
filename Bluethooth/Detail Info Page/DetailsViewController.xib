@@ -96,6 +96,9 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tapToAudio:" destination="-1" eventType="touchUpInside" id="nLY-bC-D4Q"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezy-bp-nYh">
                             <rect key="frame" x="211" y="39" width="137" height="41"/>

@@ -7,6 +7,7 @@
 //
 
 #import "DetailsViewController.h"
+#import "CustomColor.h"
 
 @interface DetailsViewController ()
 
@@ -48,22 +49,25 @@
     self.clip10.layer.cornerRadius = self.clip1.frame.size.height/2;
     
     // Intelligent Light view
-    self.navigationLight.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.strobeLight.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.impulseEngines.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.deflectorDish.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.warpEffect.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.navigationLight.layer.cornerRadius = self.navigationLight.frame.size.height/2;
+    self.strobeLight.layer.cornerRadius = self.strobeLight.frame.size.height/2;
+    self.impulseEngines.layer.cornerRadius = self.impulseEngines.frame.size.height/2;
+    self.deflectorDish.layer.cornerRadius = self.deflectorDish.frame.size.height/2;
+    self.warpEffect.layer.cornerRadius = self.warpEffect.frame.size.height/2;
     
     //Interior View
-    self.allInteriorLight.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.saurcerLight.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.secondaryHull.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.neckLight.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.chillerGrill.layer.cornerRadius = self.clip1.frame.size.height/2;
-    self.bridgeLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.allInteriorLight.layer.cornerRadius = self.allInteriorLight.frame.size.height/2;
+    self.saurcerLight.layer.cornerRadius = self.saurcerLight.frame.size.height/2;
+    self.secondaryHull.layer.cornerRadius = self.secondaryHull.frame.size.height/2;
+    self.neckLight.layer.cornerRadius = self.neckLight.frame.size.height/2;
+    self.chillerGrill.layer.cornerRadius = self.chillerGrill.frame.size.height/2;
+    self.bridgeLight.layer.cornerRadius = self.bridgeLight.frame.size.height/2;
     
     //Weapon
-    
+    self.photonTorpedo.layer.cornerRadius = self.photonTorpedo.frame.size.height/2;
+    self.quantumTorpedo.layer.cornerRadius = self.quantumTorpedo.frame.size.height/2;
+    self.phaser.layer.cornerRadius = self.phaser.frame.size.height/2;
+    self.phaserArray.layer.cornerRadius = self.phaserArray.frame.size.height/2;
     
 }
 
@@ -71,4 +75,13 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)tapToAudio:(UIButton *)sender {
+    UIButton *button = (UIButton *)sender;
+    NSInteger tag = button.tag;
+    if ([button.backgroundColor isEqual:[CustomColor customRedColor]]) {
+        button.backgroundColor = [CustomColor customGreenColor];
+    }else {
+        button.backgroundColor = [CustomColor customRedColor];
+    }
+}
 @end

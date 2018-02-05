@@ -26,6 +26,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *clip9;
 @property (weak, nonatomic) IBOutlet UIButton *clip10;
 
+- (IBAction)tapToAudio:(UIButton *)sender;
+
+
 //Intelligent Light
 @property (nonatomic) BOOL isShowIntelligentLightView;
 @property (weak, nonatomic) IBOutlet UIView *intelligentLightView;

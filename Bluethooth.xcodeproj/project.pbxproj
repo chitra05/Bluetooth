@@ -11,6 +11,7 @@
 		5A0DB7CB20187347000E9922 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0DB7C920187347000E9922 /* DetailsViewController.xib */; };
 		5A0F5B9A2021C2F1002E98A0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0F5B992021C2F1002E98A0 /* CoreBluetooth.framework */; };
 		5A0F5B9D2021C828002E98A0 /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F5B9B2021C827002E98A0 /* JNKeychain.m */; };
+		5A10EF5520286D7D002FDB0A /* CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A10EF5420286D7D002FDB0A /* CustomColor.m */; };
 		5A3CADF22011C2E400794FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CADF12011C2E400794FE7 /* AppDelegate.m */; };
 		5A3CADF52011C2E400794FE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CADF42011C2E400794FE7 /* ViewController.m */; };
 		5A3CADF82011C2E400794FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CADF62011C2E400794FE7 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		5A0F5B992021C2F1002E98A0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		5A0F5B9B2021C827002E98A0 /* JNKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKeychain.m; sourceTree = "<group>"; };
 		5A0F5B9C2021C828002E98A0 /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
+		5A10EF5320286D7D002FDB0A /* CustomColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomColor.h; sourceTree = "<group>"; };
+		5A10EF5420286D7D002FDB0A /* CustomColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomColor.m; sourceTree = "<group>"; };
 		5A3CADED2011C2E400794FE7 /* Bluethooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluethooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3CADF02011C2E400794FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A3CADF12011C2E400794FE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A10EF4920286609002FDB0A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5A10EF5320286D7D002FDB0A /* CustomColor.h */,
+				5A10EF5420286D7D002FDB0A /* CustomColor.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		5A3CADE42011C2E400794FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		5A3CADEF2011C2E400794FE7 /* Bluethooth */ = {
 			isa = PBXGroup;
 			children = (
+				5A10EF4920286609002FDB0A /* Library */,
 				5A820BDC2026B56500DB0AE1 /* Cell */,
 				5AB5A21220231B2D00126662 /* BluetoothDevice.h */,
 				5AB5A21120231B2C00126662 /* BluetoothManager.h */,
@@ -241,6 +254,7 @@
 				5A3CAE032011C2E400794FE7 /* main.m in Sources */,
 				5A820BE02026B5A000DB0AE1 /* BluetoothDeviceCell.m in Sources */,
 				5A3CADF22011C2E400794FE7 /* AppDelegate.m in Sources */,
+				5A10EF5520286D7D002FDB0A /* CustomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
