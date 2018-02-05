@@ -23,12 +23,16 @@
     _interiorView.hidden = true;
     // audio view
     if (_isShowAudioView == YES) {
+        _topLabel.text = @"Audio";
         _audioView.hidden = false;
     }else if (_isShowIntelligentLightView == YES) {
+        _topLabel.text = @"Intelligent Light";
         _intelligentLightView.hidden = false;
     }else if (_isShowInteriorView == YES) {
+        _topLabel.text = @"Interior Light";
         _interiorView.hidden = false;
     }else if (_isShowWeaponView == YES) {
+        _topLabel.text = @"Weapon";
         _interiorView.hidden = false;
     }
     
@@ -44,6 +48,21 @@
     self.clip10.layer.cornerRadius = self.clip1.frame.size.height/2;
     
     // Intelligent Light view
+    self.navigationLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.strobeLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.impulseEngines.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.deflectorDish.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.warpEffect.layer.cornerRadius = self.clip1.frame.size.height/2;
+    
+    //Interior View
+    self.allInteriorLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.saurcerLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.secondaryHull.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.neckLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.chillerGrill.layer.cornerRadius = self.clip1.frame.size.height/2;
+    self.bridgeLight.layer.cornerRadius = self.clip1.frame.size.height/2;
+    
+    //Weapon
     
     
 }

@@ -14,7 +14,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController">
             <connections>
+                <outlet property="allInteriorLight" destination="rCo-go-oNr" id="6u2-tc-0TA"/>
                 <outlet property="audioView" destination="Yjk-Wt-Vz2" id="s3W-UZ-plo"/>
+                <outlet property="bridgeLight" destination="zmf-2m-Naz" id="g9c-9N-oWR"/>
+                <outlet property="chillerGrill" destination="zfz-5S-Yrd" id="jEP-Hx-0u1"/>
                 <outlet property="clip1" destination="QTz-X9-yqO" id="Lnc-Q1-IAe"/>
                 <outlet property="clip10" destination="z2k-w3-s11" id="NW7-fh-0Xd"/>
                 <outlet property="clip2" destination="ezy-bp-nYh" id="rSd-h1-8IS"/>
@@ -25,9 +28,22 @@
                 <outlet property="clip7" destination="ErE-UC-R1a" id="9Cf-He-Euh"/>
                 <outlet property="clip8" destination="93i-AD-t2t" id="CaY-sh-lUg"/>
                 <outlet property="clip9" destination="dEm-Ty-AZ9" id="R0H-sl-Ku7"/>
+                <outlet property="deflectorDish" destination="GRm-08-Oo0" id="MvX-mS-SwN"/>
+                <outlet property="impulseEngines" destination="MuB-oB-itK" id="cvp-8F-rgU"/>
                 <outlet property="intelligentLightView" destination="sGl-xm-rsh" id="rcA-A6-rcL"/>
                 <outlet property="interiorView" destination="ymu-0u-DtZ" id="h2M-rW-PmR"/>
+                <outlet property="navigationLight" destination="ycb-fK-SBu" id="v08-wO-Cpb"/>
+                <outlet property="neckLight" destination="lMA-Rx-49h" id="gWU-ph-XAC"/>
+                <outlet property="phaser" destination="8wS-kn-cZf" id="BFW-A7-2ec"/>
+                <outlet property="phaserArray" destination="GOh-jT-NPd" id="cSt-sS-6Qt"/>
+                <outlet property="photonTorpedo" destination="IW5-I8-sHs" id="Ure-1b-RZe"/>
+                <outlet property="quantumTorpedo" destination="pmK-j3-GxY" id="bA4-ez-cxx"/>
+                <outlet property="saurcerLight" destination="bZG-Gi-RB8" id="OgO-KF-JUh"/>
+                <outlet property="secondaryHull" destination="oeP-vh-aNE" id="JPS-Zt-FeI"/>
+                <outlet property="strobeLight" destination="lx6-ZF-4iu" id="hsJ-f0-p0r"/>
+                <outlet property="topLabel" destination="MuY-9z-ebh" id="a5C-ih-Ayw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warpEffect" destination="FTk-Zw-8Ey" id="n1s-Ud-SdI"/>
                 <outlet property="weaponView" destination="d5q-qW-GMD" id="FEa-oT-vwa"/>
             </connections>
         </placeholder>
@@ -39,6 +55,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVT-yH-Ya3">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                     <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-9z-ebh">
+                            <rect key="frame" x="166" y="-0.5" width="42" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr8-cJ-FG4">
                             <rect key="frame" x="0.0" y="9" width="54" height="51"/>
                             <constraints>
@@ -48,9 +70,13 @@
                             <state key="normal" image="ic_back.png"/>
                         </button>
                     </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.10196078431372549" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="Kr8-cJ-FG4" firstAttribute="top" secondItem="SVT-yH-Ya3" secondAttribute="top" constant="9" id="6Ih-m1-ysC"/>
                         <constraint firstAttribute="height" constant="60" id="Hho-2M-AwE"/>
+                        <constraint firstItem="MuY-9z-ebh" firstAttribute="centerX" secondItem="SVT-yH-Ya3" secondAttribute="centerX" id="LAL-iG-1Jq"/>
+                        <constraint firstItem="MuY-9z-ebh" firstAttribute="height" secondItem="SVT-yH-Ya3" secondAttribute="height" id="WjI-Gp-G9K"/>
+                        <constraint firstItem="MuY-9z-ebh" firstAttribute="centerY" secondItem="SVT-yH-Ya3" secondAttribute="centerY" id="jf2-Oa-uFC"/>
                         <constraint firstItem="Kr8-cJ-FG4" firstAttribute="leading" secondItem="SVT-yH-Ya3" secondAttribute="leading" id="xCA-i1-OK1"/>
                     </constraints>
                 </view>
@@ -208,7 +234,7 @@
                             <rect key="frame" x="211" y="39" width="137" height="41"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                            <state key="normal" title="Clip 1">
+                            <state key="normal" title="Strobe Lights">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -219,7 +245,7 @@
                             <rect key="frame" x="28" y="119" width="137" height="41"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                            <state key="normal" title="Clip 1">
+                            <state key="normal" title="Impulse Engines">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -230,7 +256,7 @@
                             <rect key="frame" x="211" y="119" width="137" height="41"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                            <state key="normal" title="Clip 1">
+                            <state key="normal" title="Deflector Dish">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -241,7 +267,7 @@
                             <rect key="frame" x="119" y="199" width="137" height="41"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                            <state key="normal" title="Clip 1">
+                            <state key="normal" title="Warp Effect">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -274,11 +300,173 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymu-0u-DtZ">
                     <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCo-go-oNr">
+                            <rect key="frame" x="28" y="39" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rCo-go-oNr" secondAttribute="height" multiplier="137:41" id="vIv-Ea-WHb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="All Interior Lights">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZG-Gi-RB8">
+                            <rect key="frame" x="211" y="39" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Saucer Lights">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-vh-aNE">
+                            <rect key="frame" x="28" y="119" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Secondary Hull">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-Rx-49h">
+                            <rect key="frame" x="211" y="119" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Neck Lights">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfz-5S-Yrd">
+                            <rect key="frame" x="28" y="199" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Chiller Grill Lights">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmf-2m-Naz">
+                            <rect key="frame" x="211" y="199" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Bridge Lights">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bZG-Gi-RB8" firstAttribute="width" secondItem="rCo-go-oNr" secondAttribute="width" id="1ZP-SD-OW9"/>
+                        <constraint firstItem="lMA-Rx-49h" firstAttribute="centerY" secondItem="oeP-vh-aNE" secondAttribute="centerY" id="3mW-ZN-xac"/>
+                        <constraint firstItem="oeP-vh-aNE" firstAttribute="width" secondItem="rCo-go-oNr" secondAttribute="width" id="4Gj-Dd-cau"/>
+                        <constraint firstItem="bZG-Gi-RB8" firstAttribute="height" secondItem="rCo-go-oNr" secondAttribute="height" id="5jy-DV-Zmo"/>
+                        <constraint firstItem="oeP-vh-aNE" firstAttribute="top" secondItem="rCo-go-oNr" secondAttribute="bottom" constant="39" id="8iq-bS-GYe"/>
+                        <constraint firstItem="bZG-Gi-RB8" firstAttribute="centerY" secondItem="rCo-go-oNr" secondAttribute="centerY" id="ElH-nu-Yp3"/>
+                        <constraint firstItem="bZG-Gi-RB8" firstAttribute="centerX" secondItem="ymu-0u-DtZ" secondAttribute="centerX" multiplier="1.49" id="FMk-do-YHM"/>
+                        <constraint firstItem="zmf-2m-Naz" firstAttribute="height" secondItem="zfz-5S-Yrd" secondAttribute="height" id="Ima-In-C1H"/>
+                        <constraint firstItem="zmf-2m-Naz" firstAttribute="centerY" secondItem="zfz-5S-Yrd" secondAttribute="centerY" id="KFr-zO-LjX"/>
+                        <constraint firstItem="zmf-2m-Naz" firstAttribute="centerX" secondItem="lMA-Rx-49h" secondAttribute="centerX" id="Khx-lS-Xcs"/>
+                        <constraint firstItem="oeP-vh-aNE" firstAttribute="height" secondItem="rCo-go-oNr" secondAttribute="height" id="OPw-mV-mFF"/>
+                        <constraint firstItem="zfz-5S-Yrd" firstAttribute="top" secondItem="oeP-vh-aNE" secondAttribute="bottom" constant="39" id="Q5O-Ke-yhc"/>
+                        <constraint firstItem="zfz-5S-Yrd" firstAttribute="centerX" secondItem="oeP-vh-aNE" secondAttribute="centerX" id="URI-ps-H8X"/>
+                        <constraint firstItem="oeP-vh-aNE" firstAttribute="leading" secondItem="rCo-go-oNr" secondAttribute="leading" id="Uck-yg-zcn"/>
+                        <constraint firstItem="lMA-Rx-49h" firstAttribute="height" secondItem="oeP-vh-aNE" secondAttribute="height" id="cHF-mb-aXs"/>
+                        <constraint firstItem="rCo-go-oNr" firstAttribute="height" secondItem="ymu-0u-DtZ" secondAttribute="height" multiplier="41:456" id="gIJ-XP-Jef"/>
+                        <constraint firstItem="rCo-go-oNr" firstAttribute="centerX" secondItem="ymu-0u-DtZ" secondAttribute="centerX" multiplier="0.515" id="gWM-AS-1iK"/>
+                        <constraint firstItem="zfz-5S-Yrd" firstAttribute="height" secondItem="lMA-Rx-49h" secondAttribute="height" id="h0S-K1-0uf"/>
+                        <constraint firstItem="rCo-go-oNr" firstAttribute="centerY" secondItem="ymu-0u-DtZ" secondAttribute="centerY" multiplier="0.26" id="nO9-la-az5"/>
+                        <constraint firstItem="zmf-2m-Naz" firstAttribute="width" secondItem="zfz-5S-Yrd" secondAttribute="width" id="qpu-hv-AYy"/>
+                        <constraint firstItem="zfz-5S-Yrd" firstAttribute="width" secondItem="lMA-Rx-49h" secondAttribute="width" id="wuP-CM-8lI"/>
+                        <constraint firstItem="lMA-Rx-49h" firstAttribute="width" secondItem="oeP-vh-aNE" secondAttribute="width" id="xaO-ew-aya"/>
+                        <constraint firstItem="lMA-Rx-49h" firstAttribute="centerX" secondItem="bZG-Gi-RB8" secondAttribute="centerX" id="zfM-Tk-vJe"/>
+                    </constraints>
                 </view>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-qW-GMD">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5q-qW-GMD">
                     <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IW5-I8-sHs">
+                            <rect key="frame" x="28" y="39" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="IW5-I8-sHs" secondAttribute="height" multiplier="137:41" id="eEA-RB-sC6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Photon Torpedo">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-j3-GxY">
+                            <rect key="frame" x="211" y="39" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Quantum torpedo">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wS-kn-cZf">
+                            <rect key="frame" x="28" y="126" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Phaser">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOh-jT-NPd">
+                            <rect key="frame" x="211" y="126" width="137" height="41"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.1019607843" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="Phaser Array">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8wS-kn-cZf" firstAttribute="centerX" secondItem="IW5-I8-sHs" secondAttribute="centerX" id="4i4-Nq-5qV"/>
+                        <constraint firstItem="8wS-kn-cZf" firstAttribute="top" secondItem="IW5-I8-sHs" secondAttribute="bottom" constant="46" id="CvN-oQ-d6T"/>
+                        <constraint firstItem="GOh-jT-NPd" firstAttribute="centerX" secondItem="pmK-j3-GxY" secondAttribute="centerX" id="Cyw-x5-1Vx"/>
+                        <constraint firstItem="pmK-j3-GxY" firstAttribute="centerY" secondItem="IW5-I8-sHs" secondAttribute="centerY" id="Fxf-KT-zzZ"/>
+                        <constraint firstItem="pmK-j3-GxY" firstAttribute="height" secondItem="IW5-I8-sHs" secondAttribute="height" id="N1K-qo-ke7"/>
+                        <constraint firstItem="pmK-j3-GxY" firstAttribute="width" secondItem="IW5-I8-sHs" secondAttribute="width" id="P1c-GR-TVc"/>
+                        <constraint firstItem="GOh-jT-NPd" firstAttribute="width" secondItem="8wS-kn-cZf" secondAttribute="width" id="bOJ-zo-Jyx"/>
+                        <constraint firstItem="IW5-I8-sHs" firstAttribute="centerX" secondItem="d5q-qW-GMD" secondAttribute="centerX" multiplier="0.515" id="euW-mQ-ed7"/>
+                        <constraint firstItem="pmK-j3-GxY" firstAttribute="centerX" secondItem="d5q-qW-GMD" secondAttribute="centerX" multiplier="1.49" id="fag-dv-jPs"/>
+                        <constraint firstItem="GOh-jT-NPd" firstAttribute="centerY" secondItem="8wS-kn-cZf" secondAttribute="centerY" id="h28-Mp-IbZ"/>
+                        <constraint firstItem="8wS-kn-cZf" firstAttribute="width" secondItem="IW5-I8-sHs" secondAttribute="width" id="i3s-79-aQm"/>
+                        <constraint firstItem="IW5-I8-sHs" firstAttribute="height" secondItem="d5q-qW-GMD" secondAttribute="height" multiplier="41:456" id="nNd-ZB-xb7"/>
+                        <constraint firstItem="GOh-jT-NPd" firstAttribute="height" secondItem="8wS-kn-cZf" secondAttribute="height" id="pTH-aI-mXs"/>
+                        <constraint firstItem="IW5-I8-sHs" firstAttribute="centerY" secondItem="d5q-qW-GMD" secondAttribute="centerY" multiplier="0.26" id="qGM-R5-tC6"/>
+                        <constraint firstItem="8wS-kn-cZf" firstAttribute="height" secondItem="IW5-I8-sHs" secondAttribute="height" id="rQo-KM-aLN"/>
+                    </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="EgZ-Zq-B4z">
                     <rect key="frame" x="82.5" y="114" width="60" height="60"/>
