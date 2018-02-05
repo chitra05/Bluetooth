@@ -22,6 +22,8 @@
 		5A3CAE172011E24F00794FE7 /* DeviceInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE152011E24F00794FE7 /* DeviceInformationViewController.xib */; };
 		5A3CAE1A2011E8BA00794FE7 /* ic_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */; };
 		5A3CAE1C2011E8C800794FE7 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A3CAE1B2011E8C800794FE7 /* logo@2x.png */; };
+		5A820BE02026B5A000DB0AE1 /* BluetoothDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A820BDE2026B5A000DB0AE1 /* BluetoothDeviceCell.m */; };
+		5A820BE12026B5A000DB0AE1 /* BluetoothDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A820BDF2026B5A000DB0AE1 /* BluetoothDeviceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		5A3CAE152011E24F00794FE7 /* DeviceInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceInformationViewController.xib; sourceTree = "<group>"; };
 		5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_back@2x.png"; sourceTree = "<group>"; };
 		5A3CAE1B2011E8C800794FE7 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		5A820BDD2026B5A000DB0AE1 /* BluetoothDeviceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothDeviceCell.h; sourceTree = "<group>"; };
+		5A820BDE2026B5A000DB0AE1 /* BluetoothDeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothDeviceCell.m; sourceTree = "<group>"; };
+		5A820BDF2026B5A000DB0AE1 /* BluetoothDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoothDeviceCell.xib; sourceTree = "<group>"; };
 		5AB5A21120231B2C00126662 /* BluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothManager.h; sourceTree = "<group>"; };
 		5AB5A21220231B2D00126662 /* BluetoothDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothDevice.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +106,7 @@
 		5A3CADEF2011C2E400794FE7 /* Bluethooth */ = {
 			isa = PBXGroup;
 			children = (
+				5A820BDC2026B56500DB0AE1 /* Cell */,
 				5AB5A21220231B2D00126662 /* BluetoothDevice.h */,
 				5AB5A21120231B2C00126662 /* BluetoothManager.h */,
 				5A0F5B9C2021C828002E98A0 /* JNKeychain.h */,
@@ -139,6 +145,16 @@
 				5A3CAE192011E8BA00794FE7 /* ic_back@2x.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		5A820BDC2026B56500DB0AE1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5A820BDD2026B5A000DB0AE1 /* BluetoothDeviceCell.h */,
+				5A820BDE2026B5A000DB0AE1 /* BluetoothDeviceCell.m */,
+				5A820BDF2026B5A000DB0AE1 /* BluetoothDeviceCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +221,7 @@
 				5A3CAE172011E24F00794FE7 /* DeviceInformationViewController.xib in Resources */,
 				5A3CADFD2011C2E400794FE7 /* Assets.xcassets in Resources */,
 				5A3CAE1A2011E8BA00794FE7 /* ic_back@2x.png in Resources */,
+				5A820BE12026B5A000DB0AE1 /* BluetoothDeviceCell.xib in Resources */,
 				5A3CADF82011C2E400794FE7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +239,7 @@
 				5A3CADF52011C2E400794FE7 /* ViewController.m in Sources */,
 				5A0DB7CA20187347000E9922 /* DetailsViewController.m in Sources */,
 				5A3CAE032011C2E400794FE7 /* main.m in Sources */,
+				5A820BE02026B5A000DB0AE1 /* BluetoothDeviceCell.m in Sources */,
 				5A3CADF22011C2E400794FE7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

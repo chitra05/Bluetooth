@@ -10,9 +10,11 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "JNKeychain.h"
 #import "BluetoothManager.h"
+#import "BluetoothDeviceCell.h"
 
+static NSString *BluetoothCellIdenfier = @"BluetoothDeviceCell";
 static BluetoothManager *_bluetoothManager = nil;
-@interface ViewController ()<CBCentralManagerDelegate, UIAlertViewDelegate>
+@interface ViewController ()<CBCentralManagerDelegate, UIAlertViewDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (readwrite, nonatomic, strong) CBCentralManager *centralManager;
 @end
 
@@ -36,6 +38,10 @@ static BluetoothManager *_bluetoothManager = nil;
                            initWithDelegate:self
                            queue:dispatch_get_main_queue()
                            options:@{CBCentralManagerOptionShowPowerAlertKey: @(YES)}];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    UINib *nib = [UINib nibWithNibName:BluetoothCellIdenfier bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:BluetoothCellIdenfier];
 }
 
 
@@ -50,14 +56,29 @@ static BluetoothManager *_bluetoothManager = nil;
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message: @"Application is requesting permission to turn on Bluetooth. Allow?" delegate: nil cancelButtonTitle:@"NO" otherButtonTitles:@"YES", nil];
         alert.delegate = self;
         [alert show];
+    } else if (central.state == CBCentralManagerStatePoweredOn) {
+        [_bluetoothManager deviceScanningEnabled];
+        id pair = [_bluetoothManager pairedDevices];
+        NSLog(@"hi = %@",pair);
     }
 }
 
 - (void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         [_bluetoothManager setEnabled:true];
-        [_bluetoothManager deviceScanningEnabled];
+        
     }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BluetoothDeviceCell *cell = [tableView dequeueReusableCellWithIdentifier:BluetoothCellIdenfier forIndexPath:indexPath];
+    return cell;
 }
 
 @end

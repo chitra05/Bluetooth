@@ -22,10 +22,20 @@
 @property (weak, nonatomic) IBOutlet UIButton *clip6;
 @property (weak, nonatomic) IBOutlet UIButton *clip7;
 @property (weak, nonatomic) IBOutlet UIButton *clip8;
+@property (weak, nonatomic) IBOutlet UIButton *clip9;
+@property (weak, nonatomic) IBOutlet UIButton *clip10;
 
+//Intelligent Light
+@property (nonatomic) BOOL isShowIntelligentLightView;
+@property (weak, nonatomic) IBOutlet UIView *intelligentLightView;
 
+//interior
+@property (nonatomic) BOOL isShowInteriorView;
+@property (weak, nonatomic) IBOutlet UIView *interiorView;
 
-
+//weapon
+@property (nonatomic) BOOL isShowWeaponView;
+@property (weak, nonatomic) IBOutlet UIView *weaponView;
 
 
 
